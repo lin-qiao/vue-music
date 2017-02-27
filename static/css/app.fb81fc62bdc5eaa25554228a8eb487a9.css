@@ -270,13 +270,13 @@
   padding-bottom: 1.56rem;
   z-index: 11;
   padding-top: 1.29rem;
-  background: url(/vue-music/static/images/body-bg.7f43813.7f43813.jpg) no-repeat 100%;
+  background: url(/vue-music/diststatic/images/body-bg.7f43813.7f43813.jpg) no-repeat 100%;
   background-attachment: fixed;
   background-size: 100% 100%;
 }
 .search-hot-box,.search-list-box{
   padding: 0.44rem;
-  background: url(/vue-music/static/images/count-box-border.91be19d.png) no-repeat bottom;
+  background: url(/vue-music/diststatic/images/count-box-border.91be19d.png) no-repeat bottom;
   background-size: 100% auto;
   display: -ms-flexbox;
   display: flex;
@@ -303,7 +303,7 @@
   height: 52px;
   width: 100%;
   border-top: 1px solid hsla(0,0%,100%,.4);
-  background: url(/vue-music/static/images/body-bg.7f43813.7f43813.jpg) no-repeat 50%;
+  background: url(/vue-music/diststatic/images/body-bg.7f43813.7f43813.jpg) no-repeat 50%;
   background-size: 100% auto;
   position: absolute;
   left: 0;
@@ -388,7 +388,7 @@
       flex-direction: column;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  background: url(/vue-music/static/images/body-bg.7f43813.7f43813.jpg) no-repeat 100%;
+  background: url(/vue-music/diststatic/images/body-bg.7f43813.7f43813.jpg) no-repeat 100%;
   background-attachment: fixed;
   background-size: 100% 100%;
 }
@@ -609,7 +609,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url(/vue-music/static/images/body-bg.7f43813.7f43813.jpg) no-repeat 100%;
+  background: url(/vue-music/diststatic/images/body-bg.7f43813.7f43813.jpg) no-repeat 100%;
   background-attachment: fixed;
   background-size: 100% 100%;
   z-index: 999;
@@ -665,7 +665,7 @@
   -ms-flex-align: center;
       align-items: center;
   padding: 0.24rem 0.37rem;
-  background: url(/vue-music/static/images/count-box-border.91be19d.png) no-repeat bottom;
+  background: url(/vue-music/diststatic/images/count-box-border.91be19d.png) no-repeat bottom;
   background-size: 100% auto;
 }
 .play-list-box .play-list-index{
@@ -708,7 +708,7 @@
   bottom: 0;
   min-height: 4.39rem;
   width: 100%;
-  background: url(/vue-music/static/images/body-bg.7f43813.7f43813.jpg) no-repeat top;
+  background: url(/vue-music/diststatic/images/body-bg.7f43813.7f43813.jpg) no-repeat top;
   background-size: 100% auto;
 }
 .del-song .play-list-info{
@@ -722,7 +722,7 @@
   flex-direction: column;
   padding: 0.41rem;
   box-sizing: border-box;
-  background: url(/vue-music/static/images/count-box-border.91be19d.png) no-repeat bottom;
+  background: url(/vue-music/diststatic/images/count-box-border.91be19d.png) no-repeat bottom;
   background-size: 100% auto;
 }
 .del-song .song-box-name{
@@ -734,7 +734,7 @@
   color: #fff;
   font-size: 0.34rem;
   text-align: center;
-  background: url(/vue-music/static/images/count-box-border.91be19d.png) no-repeat bottom;
+  background: url(/vue-music/diststatic/images/count-box-border.91be19d.png) no-repeat bottom;
   background-size: 100% auto;
 }
 /*play-list-warp-end*/
@@ -913,7 +913,7 @@
   display: -ms-flexbox;
   display: flex;
   display: -webkit-flex;
-  background: url(/vue-music/static/images/count-box-border.91be19d.png) no-repeat bottom;
+  background: url(/vue-music/diststatic/images/count-box-border.91be19d.png) no-repeat bottom;
   background-size: 100% auto;
   -ms-flex-align: center;
       align-items: center;
@@ -959,13 +959,13 @@
 body{
     min-height: 100vh;
     box-sizing: border-box;
-    background: url(/vue-music/static/images/body-bg.7f43813.7f43813.jpg) no-repeat 100%;
+    background: url(/vue-music/diststatic/images/body-bg.7f43813.7f43813.jpg) no-repeat 100%;
     background-attachment: fixed;
     background-size: 100% 100%;
     font-family: PingFangSC,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
  a:hover{
-   text-decoration: none;
+   text-decoration: none !important;
    display: block;
  }
 @charset "UTF-8";
@@ -4309,4 +4309,4 @@ body{
   animation-name: slideOutUp;
 }
 
-/*# sourceMappingURL=app.0a13b6d2a0598e10215586ab63c02afa.css.map*/
+/*# sourceMappingURL=app.fb81fc62bdc5eaa25554228a8eb487a9.css.map*/
