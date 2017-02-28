@@ -51,6 +51,7 @@ export default {
   },
   methods:{
     delSong(e,index){
+      if(this.playList.length<=1){return}
       let box =document.getElementsByClassName('play-list-box')[index];
       let el = box.querySelector('.del-song');
       el.style.display = 'block';
@@ -65,7 +66,6 @@ export default {
         }
         localStorage.playList = JSON.stringify(this.playList);
         el.style.display = 'none';
-        this.$store.state.index -= 1;
         this.$store.commit('playNext')
       }
     },

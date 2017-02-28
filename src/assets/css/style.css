@@ -4,7 +4,7 @@ body{
     background: url(../image/body-bg.7f43813.jpg) no-repeat 100%;
     background-attachment: fixed;
     background-size: 100% 100%;
-    font-family: PingFangSC,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: PingFangSC,Helvetica Neue,Helvetica,Arial,sans-serif !important;
 }
  a:hover{
    text-decoration: none !important;

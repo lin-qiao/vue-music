@@ -394,6 +394,7 @@
 }
 /*auido-header-start*/
 .audio-header{
+  background: rgba(0,0,0,.1);
   height: 1.29rem;
   position: fixed;
   top:0;
@@ -459,8 +460,10 @@
 .audio-box{
   height: 4.88rem;
   position: relative;
+  overflow: hidden;
 }
-.audio-box-img{
+.audio-box-img img{
+  width: 100%;
 }
 .audio-progress-warp{
   position: absolute;
@@ -507,6 +510,7 @@
 }
 /*audio-box-end*/
 .audio-lyric{
+  padding-top: 10px;
   -o-flex: 1;
   -moz-flex: 1;
   -ms-flex: 1;
@@ -962,7 +966,7 @@ body{
     background: url(/vue-music/static/images/body-bg.7f43813.7f43813.jpg) no-repeat 100%;
     background-attachment: fixed;
     background-size: 100% 100%;
-    font-family: PingFangSC,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: PingFangSC,Helvetica Neue,Helvetica,Arial,sans-serif !important;
 }
  a:hover{
    text-decoration: none !important;
@@ -4309,4 +4313,4 @@ body{
   animation-name: slideOutUp;
 }
 
-/*# sourceMappingURL=app.becf16f644093ac01254ac6f327d2224.css.map*/
+/*# sourceMappingURL=app.8e8d52d5f353bfabd963c8a7990319eb.css.map*/

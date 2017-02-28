@@ -61,7 +61,7 @@ export default {
   methods:{
     play(i){
       let song = this.songList.songlist[i].data;
-      this.$store.state.song = {'id':song.songid,'mid':song.songmid,'name':song.songname,'singer':song.singer[0].name};
+      this.$store.state.song = {'id':song.songid,'mid':song.songmid,'name':song.songname,'singer':song.singer[0].name,'albumid':song.albumid};
       this.$store.commit('setPlaylist')
       this.$store.state.isShowAudio = true;
       this.$store.state.isShowAudioNav = true;

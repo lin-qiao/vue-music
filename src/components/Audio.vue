@@ -11,7 +11,9 @@
     </div>
     <div class="audio-box">
       <audio :src="songUrl" id="music" :autoplay="isPlayIng" @timeupdate="updateTime()" @ended="playNext"></audio>
-      <div class="audio-box-img"></div>
+      <div class="audio-box-img">
+        <img :src="albumidURL" alt="">
+      </div>
       <div class="audio-progress-warp">
         <div class="audio-progress" @click="updatePlay($event)">
           <div class="audio-progress-box" :style="{width:progressWidth}">
@@ -27,7 +29,7 @@
     <div class="audio-lyric" :get-lyric="BaseLyric">
       <div class="audio-lyric-warp">
         <p class="lyric-item" v-for="v in lyric">{{v.content}}</p>
-      </div>  
+      </div>
     </div>
     <div class="audio-nav">
       <div class="audio-nav-button">
@@ -81,6 +83,10 @@ export default {
           });
           this.$store.state.isLyric = true;
         })
+      },
+      albumidURL(state){
+        if(state.song.albumid == null){return}
+        return 'http://imgcache.qq.com/music/photo/album_500/'+state.song.albumid % 100+'/500_albumpic_'+state.song.albumid+'_0.jpg';
       }
     })
   },
@@ -156,6 +162,7 @@ export default {
 }
 /*auido-header-start*/
 .audio-header{
+  background: rgba(0,0,0,.1);
   height: 1.29rem;
   position: fixed;
   top:0;
@@ -230,9 +237,10 @@ export default {
 .audio-box{
   height: 4.88rem;
   position: relative;
+  overflow: hidden;
 }
-.audio-box-img{
-
+.audio-box-img img{
+  width: 100%;
 }
 .audio-progress-warp{
   position: absolute;
@@ -277,6 +285,7 @@ export default {
 }
 /*audio-box-end*/
 .audio-lyric{
+  padding-top: 10px;
   -o-flex: 1;
   -moz-flex: 1;
   -webkit-box-flex: 1;
