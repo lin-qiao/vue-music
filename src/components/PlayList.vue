@@ -62,11 +62,14 @@ export default {
         for(let i in this.playList){
           if(i == index){
             this.$store.state.playList.splice(i,1);
+            if(this.playList[i] == this.song){
+              this.$store.commit('playNext')
+            }
           }
         }
         localStorage.playList = JSON.stringify(this.playList);
         el.style.display = 'none';
-        this.$store.commit('playNext')
+
       }
     },
     bank(){
